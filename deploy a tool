@@ -1,0 +1,16 @@
+******************************************************
+Deploy in angular
+******************************************************
+
+
+
+=>  ng build --prod
+
+rename in index.html 
+<base href = "/e-content/">
+
+save
+
+name the folder as same as href name
+
+login to server, take a backup then place the build in thier
