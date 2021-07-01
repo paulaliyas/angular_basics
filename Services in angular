@@ -1,0 +1,77 @@
+******************************************************
+SERVICES 
+******************************************************
+
+
+------------------
+login.component.ts
+------------------
+
+#1. import {authenicationServices} from 'service'
+
+before create service
+
+=> ng g s service_name
+
+ex:ng g s common_service/authenication
+
+------------------------
+authenication.service.ts
+------------------------
+
+baseurl = environment.baseUrl;
+
+import {enviorment} from 'src/envts.envt';
+before...
+
+--------------
+environment.ts
+--------------
+
+env.prod.ts == baseUrl:----------
+env.ts == baseUrl:------
+
+after
+------------------------
+authenication.service.ts
+------------------------
+
+constructor(private http: HttpClient){}
+import {HttpClient} from '@angular/common/http';
+
+
+------------------
+login.component.ts
+------------------
+
+constructor(private router:Router, private authenicationService: AuthenicationService){}
+
+import {AutheticationService} from './Services/authenicationService';
+
+Onsubmit(username,password)
+{
+--------
+--------
+}
+
+
+------------------------
+authenication.service.ts
+------------------------
+login(obj){
+----------
+----------
+}
+
+
+--------------
+app.module.ts
+--------------
+
+import {HttpClientModule} from '@angular/common/http';
+import:[
+  HttpClientModule
+]
+
+
+
