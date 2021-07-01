@@ -1,0 +1,27 @@
+# mdb-bootstrap installation
+
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+
+
+step 1: download - Material Design for Bootstrap (Angular version)
+
+https://mdbootstrap.com/docs/angular/getting-started/download/
+
+step 2: after download .zip file extract it to the location where you want to start the project.
+
+step 3: copy the path of project folder.
+
+step 4: open terminal and change directory (cd) to the copied path.
+
+step 5: in terminal : npm install
+
+step 6: after completion of installation run : ng serve
+
+step 7: open vscode or other ide then select the folder open it.
+
+NG SERVE
+
+*****************************************************************************************************************************
+ENJOY YOUR CODING !
+*****************************************************************************************************************************
