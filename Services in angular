@@ -7,7 +7,7 @@ SERVICES
 login.component.ts
 ------------------
 
-#1. import {authenicationServices} from 'service'
+import {authenicationServices} from 'service'
 
 before create service
 
