@@ -1,0 +1,37 @@
+******************************************************
+#The routing done in angular with some example codes
+******************************************************
+
+--------------
+app.module.ts
+--------------
+
+import {Routes,RouterModule} from '@angular/router';
+
+const appRoutes:Routes=[
+  {path:'',component:home},
+  {path:'dashboard',component:dashboard-component}];
+ 
+ imports:[
+  RouterModule.forRoot(appRoutes)
+  ]
+  
+
+
+------------------
+app.component.html
+------------------
+
+<router-outlet></router-outlet>
+
+
+---------------------
+use of router in href
+---------------------
+
+routerLink="/"
+routerLink="/dashboard"
+[routerLink]="['/users']"
+
+
+
