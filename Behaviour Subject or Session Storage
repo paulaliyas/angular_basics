@@ -1,0 +1,76 @@
+******************************************************
+Behaviour Subject
+******************************************************
+
+Services
+
+------------------------
+authenication.service.ts
+------------------------
+
+decalre:
+public currentUserdata = new BehaviourSubject({});
+
+public getUserdetails(value){
+this.currentUserdata.next(value);
+}
+
+import {behaviourSubject} from 'rxjs';
+
+------------------
+login.component.ts
+------------------
+
+onSubmit(username,pass){
+
+//resp=true
+this.authenticationService.getUserdetails(userData);
+
+let userData = {
+  user_id:data["user_id"]
+  }
+ 
+ Dashboard 
+ 
+ ------------------------
+dashboard.component.ts
+------------------------
+
+ngOnInit():void(){
+  this.authenicationService.currentuserdata.subscribe(data => {
+    this.user_id = data['user_id'];
+    })
+    
+    
+dashboard.html
+{{user_id}}
+
+
+
+
+******************************************************
+Session Storage
+******************************************************
+
+
+------------------------
+login.component.ts
+------------------------
+
+onSubmit(){
+  SessionStorage.setItem('userdetails',JSON.Stringify(Userdata));
+  }
+  
+  
+------------------------
+dashboard.component.ts
+------------------------
+
+ngOnInit(){
+  let Userdetails = JSON.parse(SessionStorage.getItem('userdetails'));
+  this.user_id = userdetails.user_id;
+  }
+  
+logout(){
+  SessionStorage.clear();
+  }
