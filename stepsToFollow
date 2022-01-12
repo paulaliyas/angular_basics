@@ -1,5 +1,5 @@
 1. create project
-2. create new component
+2. create new component - ng generate component <component-name>
 3. setup routing
 4. setup services
 5. setup session/behaviour subject
