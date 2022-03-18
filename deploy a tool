@@ -2,12 +2,14 @@
 Deploy in angular
 ******************************************************
 
+common-functions.service.ts => prodenv = true;
+
 
 
 =>  ng build --prod
 
 rename in index.html 
-<base href = "/e-content/">
+<base href = "/------/">   ---name of the deploying tool
 
 save
 
